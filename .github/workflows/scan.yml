@@ -6,8 +6,8 @@
 name: scan
 
 on:
-  # schedule: turned on after the switch-over (11 Nov)
-  #   - cron: "7,37 * * * *"   # backup only; cron-job.org is the main trigger
+  schedule:
+    - cron: "7,37 * * * *"   # backup only; cron-job.org is the main trigger
   workflow_dispatch:
 
 permissions:
